@@ -37,3 +37,4 @@
 - usePopularMovies Custom Hook
 - useTopRatedMovies Custom Hook
 - useUpcomingMovies Custom Hook
+- useTendingMovies Custom Hook
