@@ -36,3 +36,4 @@
 - Made the browse page amazing with tailwind css
 - usePopularMovies Custom Hook
 - useTopRatedMovies Custom Hook
+- useUpcomingMovies Custom Hook
