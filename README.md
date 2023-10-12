@@ -38,3 +38,6 @@
 - useTopRatedMovies Custom Hook
 - useUpcomingMovies Custom Hook
 - useTendingMovies Custom Hook
+- GPT Search page
+- GPT Search bar
+- Multi language feature in our app

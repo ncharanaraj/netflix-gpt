@@ -16,3 +16,10 @@ export const API_OPTIONS = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ODNiMjkxOTEzMWM3ODdkYTlmZGE1Yzg3NGE5M2Q1MCIsInN1YiI6IjYzZTg1NGRhNmM4NDkyMDA3ZDI2MzA3NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.G2I_IhhCKCcPKKILHecFh5MD2o5UxW8uKF_v74DQn_g",
   },
 };
+
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", language: "English" },
+  { identifier: "ka", language: "ಕನ್ನಡ" },
+  { identifier: "hi", language: "हिंदी" },
+  { identifier: "es", language: "español" },
+];
