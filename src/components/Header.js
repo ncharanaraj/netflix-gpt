@@ -5,6 +5,7 @@ import { auth } from "../utils/firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO } from "../utils/constants";
+import { toggleGptSearchView } from "../utils/gptSlice";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -40,11 +41,21 @@ const Header = () => {
     return () => unsubscribe();
   }, []);
 
+  const handleGptSearchClick = () => {
+    dispatch(toggleGptSearchView());
+  };
+
   return (
     <div className="absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
       <img src={LOGO} alt="logo" className="w-56" />
       {user && (
         <div className="flex items-center gap-1">
+          <button
+            className="py-2 px-4 m-2 bg-purple-800 text-white rounded-md font-semibold"
+            onClick={handleGptSearchClick}
+          >
+            GPT Search
+          </button>
           <img
             src={user?.photoURL}
             alt="usericon"
