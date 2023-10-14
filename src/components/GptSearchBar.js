@@ -13,7 +13,7 @@ const GptSearchBar = () => {
   //search movie in TMDB
   const searchMovieTMDB = async (movie) => {
     const response = await fetch(
-      `https://api.themoviedb.org/3/search/movie?${movie}query=page=1`,
+      `https://api.themoviedb.org/3/search/movie?query=${movie}&include_adult=false&page=1'`,
       API_OPTIONS
     );
 
@@ -24,7 +24,7 @@ const GptSearchBar = () => {
 
   const handleGptSearchClick = async () => {
     const gptQuery =
-      "Act as Movie Recommendation System and suggest some movies for the query" +
+      "Act as Movie Recommendation System and suggest some movies for the query " +
       searchText.current.value +
       ". only give me names of 5 movies, comma separated like the exmaple result give ahead. Example Result: KGF, Kantara, Pushpa, Bahubali, Don";
 
