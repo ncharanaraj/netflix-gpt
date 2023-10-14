@@ -38,7 +38,7 @@ const GptSearchBar = () => {
       //TODO: write error message
     }
 
-    const gptMovies = gptResults.choices[0]?.message?.content.split(",");
+    const gptMovies = gptResults.choices[0]?.message?.content.split(", ");
 
     const movie = gptMovies.map((gptMovie) => searchMovieTMDB(gptMovie));
 
@@ -53,9 +53,9 @@ const GptSearchBar = () => {
   };
 
   return (
-    <div className="pt-[8%] flex justify-center">
+    <div className="pt-[40%] md:pt-[8%] flex justify-center">
       <form
-        className="w-1/2 bg-black grid grid-cols-12"
+        className="w-full md:w-1/2 bg-black grid grid-cols-12"
         onSubmit={(e) => e.preventDefault()}
       >
         <input

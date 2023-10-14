@@ -41,3 +41,11 @@
 - GPT Search page
 - GPT Search bar
 - Multi language feature in our app
+- Get open ai api key
+- fetched gptMoviesSuggestions from TMDB
+- Created gptSlice added data
+- Resused Movie List component to make movie suggestion container
+- memoization
+- Added .env file
+- Adding .env file to gitignore
+- Made our site responsive
